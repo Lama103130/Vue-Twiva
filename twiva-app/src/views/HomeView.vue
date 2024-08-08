@@ -1,14 +1,27 @@
 <template>
     <div>
-        <h1></h1>
+      <NavBar />
+     
     </div>
   </template>
   
   <script>
-      export default {
-            name: "HomeView",
-      }
+  import NavBar from '@/components/NavBar.vue';
+ 
+  
+  
+  export default {
+    name: "HomeView",
+    components: {
+        NavBar,
+     
+    }
+  }
   </script>
   
-  <style>
+  <style scoped>
+ 
+  
+
   </style>
+  

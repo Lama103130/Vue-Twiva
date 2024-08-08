@@ -1,20 +1,20 @@
 <template>
-    <nav>
-      <div class="nav-left">
-        <img src="../assets/images/Logo-red.png" alt="Logo" class="logo" />
+    <nav class="flex justify-between items-center bg-[#FCFCFD] h-20 px-5">
+      <div class="flex items-center">
+        <img src="../assets/images/Logo-red.png" alt="Logo" class="w-[154.44px] h-12" />
       </div>
   
-      <div class="nav-right">
-        <div id="services">
-          <div class="whatsapp">
-            <img src="../assets/images/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon" />
+      <div class="flex items-center gap-5">
+        <div class="flex items-center gap-2.5">
+          <div class="flex items-center gap-1.25">
+            <img src="../assets/images/whatsapp.svg" alt="WhatsApp" class="w-6 h-6" />
             <span>Need to help?</span>
           </div>    
-          <img src="../assets/images/cart-Button.svg" alt="cart-Button" class="Cart-button">
+          <img src="../assets/images/cart-Button.svg" alt="cart-Button" class="w-6 h-6">
         </div>
-        <div id="buts">
-          <button id="register-but" @click="register">Register</button>
-          <button id="login-but" @click="login">Login</button>
+        <div class="flex items-center gap-2.5">
+          <button id="register-but" class="bg-[#FDE4EB] text-[#C21B54] px-3.5 py-2 border border-transparent rounded-lg w-[109px] h-9 text-sm font-normal leading-5 cursor-pointer">Register</button>
+          <button id="login-but" class="bg-[#D92058] text-white px-3.5 py-2 border border-transparent rounded-lg w-[109px] h-9 text-sm font-normal leading-5 cursor-pointer">Login</button>
         </div>
       </div>
     </nav>
@@ -23,80 +23,5 @@
   <script>
   export default {
     name: 'NavBar',
-    methods: {
-      login() {
-        // Logikk
-      },
-      register() {
-        // Logikk
-      }
-    }
   }
   </script>
-  
-  <style scoped>
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FCFCFD;
-    height: 80px;
-    padding: 0 20px;
-  }
-  .nav-left {
-    display: flex;
-    align-items: center;
-  }
-  .logo {
-    width: 154.44px;
-    height: 50px;
-  }
-  .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  #services {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .whatsapp {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .whatsapp-icon {
-    width: 24px;
-    height: 24px;
-  }
-  .Cart-button {
-    width: 24px;
-    height: 24px;
-  }
-  #buts {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .nav-right button {
-    padding: 8px 14px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    width: 109px;
-    height: 36px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    cursor: pointer;
-  }
-  #register-but {
-    background-color: #FDE4EB;
-    color: #C21B54;
-  }
-  #login-but {
-    background-color: #D92058;
-    color: #FFFFFF;
-  }
-  </style>
-  

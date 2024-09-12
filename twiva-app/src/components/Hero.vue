@@ -5,9 +5,9 @@
         <img src="../assets/images/image 12.png" alt="Cover Photo">
       </div>
   
-      <!-- Business-->
+      <!-- Business details-->
       <div class="flex items-start px-20">
-        <!-- Details -->
+       
         <img src="../assets/images/Avatar.png" alt="Business Image" class="mr-8">
         <div class="mr-20">
           <h1 class="text-2xl font-bold mb-4">Business Name</h1>
@@ -17,7 +17,7 @@
           <button class="text-[#AD1650] font-bold">Show More</button>
         </div>
   
-        <!-- Right Section with input Bar and Categories -->
+      
         <div>
           <!-- Bar -->
           <div class="flex flex-col mb-4">
